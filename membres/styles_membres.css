@@ -75,25 +75,12 @@ h1 {
 .image {
     display: block;
     width: 100%;
-    height: auto;
+    height: 70%;
     filter: grayscale(100%);
 }
 
-.overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: 0.5s ease;
-    background-color: blue;
-}
-
-.container:hover .overlay {
-    opacity: 0.5;
+.container:hover .p1 {
+  color: blue;
 }
 
 a{
@@ -107,11 +94,11 @@ a{
 
 .card {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 25vh;
+    left: 25vw;
     width: 50vw;
     height: 50vh;
-    background: #171717;
+    z-index: 100;
     transition: 1s ease-in-out;
     display: flex;
     flex-direction: column;
@@ -119,25 +106,25 @@ a{
   
   .card span {
     font-weight: bold;
-    color: white;
+    color: black;
     text-align: center;
     display: block;
     font-size: 1em;
   }
   
   .card .info {
-    font-weight: 400;
-    color: white;
+    font-size: large;
+    color: black;
     display: block;
-    text-align: center;
-    font-size: 0.72em;
+    text-align: left;
+    font-size: 1 em;
     margin: 1em;
   }
   
   .card .img {
     width: 4.8em;
     height: 4.8em;
-    background: white;
+    background: black;
     border-radius: 15px;
     margin: auto;
   }
@@ -150,12 +137,12 @@ a{
   }
   
   .card a {
-    color: white;
+    color: black;
     transition: .4s ease-in-out;
   }
   
   .card a:hover {
-    color: red;
+    color: blue;
   }
   
   .card button {
@@ -165,13 +152,32 @@ a{
     border-radius: 25px;
     border: none;
     font-weight: bold;
-    background: #ffffff;
-    color: rgb(0, 0, 0);
+    background: black;
+    color: white;
     transition: .4s ease-in-out;
   }
   
   .card button:hover {
-    background: red;
-    color: white;
+    background: blue;
+    color: black;
     cursor: pointer;
   }
+
+.card li{
+  color: black;
+  text-align: left;
+}
+
+.container:hover{
+  transition: .1s ease-in-out;
+  transform: scale(1.1)
+}
+
+p{
+  font-size: large;
+  color: black;
+  display: block;
+  text-align: left;
+  font-size: 1 em;
+  margin: 1em;
+}

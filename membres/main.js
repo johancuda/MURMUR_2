@@ -76,7 +76,8 @@ card.appendChild(ul);
 
 for(let i=0; i<links.length; i++) {
     let p = document.createElement('p');
-    p.textContent = links[i][0] + " : " + links[i][1];
+    p.innerHTML = links[i][0] + " : " + `<a href="${links[i][1]}">` + links[i][1] +"</a>";
+    console.log(p.innerHTML)
     card.appendChild(p);
     }
 

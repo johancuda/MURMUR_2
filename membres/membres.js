@@ -15,6 +15,36 @@ let images = document.querySelectorAll('img');
 
 images.forEach(img => {
     img.addEventListener('click', (e) => {
+        if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+            console.log(e.target.id)
+            switch (e.target.id){
+            case "1":
+                console.log(123)
+                window.location.href = "./iluSeydoux/"; // Replace with your mobile-specific HTML file
+                break;
+            case "2":
+                window.location.href = "./albertoGonzalezMorales"; // Replace with your mobile-specific HTML file
+                break;
+            case "3":
+                window.location.href = "./iluSeydoux/"; // Replace with your mobile-specific HTML file
+                break;
+            case "4":
+                window.location.href = "./iluSeydoux/"; // Replace with your mobile-specific HTML file
+                break;
+            case "5":
+                window.location.href = "./iluSeydoux/"; // Replace with your mobile-specific HTML file
+                break;
+            case "6":
+                window.location.href = "./iluSeydoux/"; // Replace with your mobile-specific HTML file
+                break;
+            case "7":
+                window.location.href = "./iluSeydoux/"; // Replace with your mobile-specific HTML file
+                break;
+            case "8":
+                window.location.href = "./iluSeydoux/"; // Replace with your mobile-specific HTML file
+                break;
+            }
+        } else {
         if(card && card.parentElement == document.body) {
             if(e.target.id != card.getAttribute('id')) {
                 document.body.removeChild(card)
@@ -36,7 +66,7 @@ images.forEach(img => {
         img.parentElement.classList.add('focused')
         document.querySelectorAll('#main >*:not(.focused)').forEach(e => e.style.filter = "blur(2px)");
         }
-    })
+    } })
 });
 
 
@@ -67,6 +97,15 @@ let li = document.createElement('li');
 li.textContent = works[i];
 ul.appendChild(li);
 }
+let image_div = document.createElement('div')
+image_div.classList.add('image_div')
+let img = document.createElement('img')
+img.setAttribute('src', '../assets/images/close.png')
+img.classList.add('close')
+img.addEventListener('click', () => {
+    document.body.removeChild(card)
+    document.querySelectorAll('#main >*:not(.focused)').forEach(e => e.style.filter = "");
+})
 
 // Assemble everything inside the card
 card.appendChild(span);
@@ -76,10 +115,13 @@ card.appendChild(ul);
 
 for(let i=0; i<links.length; i++) {
     let p = document.createElement('p');
-    p.innerHTML = links[i][0] + " : " + `<a href="${links[i][1]}">` + links[i][1] +"</a>";
+    p.innerHTML = `<a href="${links[i][1]}">` + links[i][0] +"</a>";
     console.log(p.innerHTML)
     card.appendChild(p);
     }
+
+    image_div.appendChild(img)
+    card.appendChild(image_div)
 
 // Finally, append to the document body (or any other container)
 document.body.appendChild(card);

@@ -173,11 +173,25 @@ a{
   transform: scale(1.1)
 }
 
-p{
+.card p{
   font-size: large;
   color: black;
   display: block;
   text-align: left;
   font-size: 1 em;
   margin: 1em;
+}
+
+.close {
+  width: 20px;
+  height: 20px;
+}
+
+.close:hover {
+  transition: .1s ease-in-out;
+  transform: scale(1.2)
+}
+
+.image_div {
+  align-content: center;
 }

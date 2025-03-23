@@ -18,28 +18,28 @@ images.forEach(img => {
         if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
             switch (e.target.id){
             case "1":
-                window.location.href = "./iluSeydoux/"; // Replace with your mobile-specific HTML file
+                window.location.href = "./iluSeydoux/";
                 break;
             case "2":
-                window.location.href = "./albertoGonzalezMorales"; // Replace with your mobile-specific HTML file
+                window.location.href = "./albertoGonzalezMorales";
                 break;
             case "3":
-                window.location.href = "./leaCelestineBernasconi/"; // Replace with your mobile-specific HTML file
+                window.location.href = "./leaCelestineBernasconi/";
                 break;
             case "4":
-                window.location.href = "./mayaBaur/"; // Replace with your mobile-specific HTML file
+                window.location.href = "./mayaBaur/";
                 break;
             case "5":
-                window.location.href = "./iluSeydoux/"; // Replace with your mobile-specific HTML file
+                window.location.href = "./michaelGirod/";
                 break;
             case "6":
-                window.location.href = "./iluSeydoux/"; // Replace with your mobile-specific HTML file
+                window.location.href = "./tamaraMeli/";
                 break;
             case "7":
-                window.location.href = "./iluSeydoux/"; // Replace with your mobile-specific HTML file
+                window.location.href = "./iluSeydoux/";
                 break;
             case "8":
-                window.location.href = "./iluSeydoux/"; // Replace with your mobile-specific HTML file
+                window.location.href = "./iluSeydoux/";
                 break;
             }
         } else {

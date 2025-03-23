@@ -16,20 +16,18 @@ let images = document.querySelectorAll('img');
 images.forEach(img => {
     img.addEventListener('click', (e) => {
         if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
-            console.log(e.target.id)
             switch (e.target.id){
             case "1":
-                console.log(123)
                 window.location.href = "./iluSeydoux/"; // Replace with your mobile-specific HTML file
                 break;
             case "2":
                 window.location.href = "./albertoGonzalezMorales"; // Replace with your mobile-specific HTML file
                 break;
             case "3":
-                window.location.href = "./iluSeydoux/"; // Replace with your mobile-specific HTML file
+                window.location.href = "./leaCelestineBernasconi/"; // Replace with your mobile-specific HTML file
                 break;
             case "4":
-                window.location.href = "./iluSeydoux/"; // Replace with your mobile-specific HTML file
+                window.location.href = "./mayaBaur/"; // Replace with your mobile-specific HTML file
                 break;
             case "5":
                 window.location.href = "./iluSeydoux/"; // Replace with your mobile-specific HTML file

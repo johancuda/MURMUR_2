@@ -21,7 +21,7 @@ a{
 }
 
 .titre {
-    font-size: 70px;
+    font-size: 90px;
     position: absolute;
       top: 50%;
       left: 50%;
@@ -46,8 +46,12 @@ a{
 /* Grid Item Styling */
 .grid-item {
   color: white;
-    font-size: 18px;
+    font-size: 25px;
     text-align: center;
+}
+
+.grid-item:hover {
+  color: black;
 }
 
 @font-face {

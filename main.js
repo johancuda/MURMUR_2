@@ -28,7 +28,7 @@ class Particle {
     }
     
     show(pointSize) {
-          stroke(0)
+          stroke(255,0,0)
           strokeWeight(this.size)
       point(this.x, this.y);
     }

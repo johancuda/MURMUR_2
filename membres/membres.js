@@ -36,10 +36,10 @@ images.forEach(img => {
                 window.location.href = "./tamaraMeli/";
                 break;
             case "7":
-                window.location.href = "./iluSeydoux/";
+                window.location.href = "./timotheeCrettaz/";
                 break;
             case "8":
-                window.location.href = "./iluSeydoux/";
+                window.location.href = "./yatoniRoyCantu/";
                 break;
             }
         } else {

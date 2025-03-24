@@ -30,6 +30,19 @@ h1 {
     justify-items: center;
 }
 
+.grid-container-3 {
+  display: grid;
+  grid-template-columns: repeat(4, 200px); /* Three columns at 100px each */
+  gap: 20px; /* Spacing between the columns */
+  /* Calculate total width: (3 * 100px) + (2 * 10px) */
+  width: calc(3 * 200px + 2 * 10px);
+  margin: 0 auto; /* Centers the container itself */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  justify-content: center; /* Centers the grid columns within the container */
+  justify-items: center;
+}
+
 /* Grid Item Styling */
 .grid-item {
     color: black;
@@ -171,6 +184,10 @@ a{
   align-content: center;
 }
 
+.blue:hover {
+  color: blue;
+}
+
 /* Responsive: Mobile Layout */
 @media (max-width: 768px) {
   .grid-container {
@@ -191,6 +208,16 @@ a{
       margin: 0 auto; /* Centers the container itself */
       align-items: center; /* Centers items horizontally */
   }
+
+  .grid-container-3 {
+    display: grid;
+    grid-template-columns: repeat(4, 100px); /* Three columns at 100px each */
+    gap: 10px; /* Spacing between the columns */
+    /* Calculate total width: (3 * 100px) + (2 * 10px) */
+    width: calc(3 * 100px + 2 * 10px);
+    margin: 0 auto; /* Centers the container itself */
+    align-items: center; /* Centers items horizontally */
+}
 
   .grid-item {
       min-width: 100%;

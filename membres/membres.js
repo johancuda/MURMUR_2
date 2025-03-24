@@ -15,7 +15,7 @@ let images = document.querySelectorAll('img');
 
 images.forEach(img => {
     img.addEventListener('click', (e) => {
-        if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+        // if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
             switch (e.target.id){
             case "1":
                 window.location.href = "./iluSeydoux/";
@@ -42,29 +42,30 @@ images.forEach(img => {
                 window.location.href = "./yatoniRoyCantu/";
                 break;
             }
-        } else {
-        if(card && card.parentElement == document.body) {
-            if(e.target.id != card.getAttribute('id')) {
-                document.body.removeChild(card)
-                create_card(e.target.id)
-                } else {
-                    document.body.removeChild(card)
-                }
-        } else {
-            create_card(e.target.id)
-        }
-        if(img.parentElement.classList.contains('focused')) {
-            document.querySelectorAll('#main >*:not(.focused)').forEach(e => e.style.filter = "");
-            img.parentElement.classList.remove('focused')
-        } else {
-        document.querySelectorAll('#main >*').forEach(e => {
-            e.style.filter = ""
-            if(e.classList.contains('focused')) {e.classList.remove('focused')}
-        });
-        img.parentElement.classList.add('focused')
-        document.querySelectorAll('#main >*:not(.focused)').forEach(e => e.style.filter = "blur(2px)");
-        }
-    } })
+    //     } else {
+    //     if(card && card.parentElement == document.body) {
+    //         if(e.target.id != card.getAttribute('id')) {
+    //             document.body.removeChild(card)
+    //             create_card(e.target.id)
+    //             } else {
+    //                 document.body.removeChild(card)
+    //             }
+    //     } else {
+    //         create_card(e.target.id)
+    //     }
+    //     if(img.parentElement.classList.contains('focused')) {
+    //         document.querySelectorAll('#main >*:not(.focused)').forEach(e => e.style.filter = "");
+    //         img.parentElement.classList.remove('focused')
+    //     } else {
+    //     document.querySelectorAll('#main >*').forEach(e => {
+    //         e.style.filter = ""
+    //         if(e.classList.contains('focused')) {e.classList.remove('focused')}
+    //     });
+    //     img.parentElement.classList.add('focused')
+    //     document.querySelectorAll('#main >*:not(.focused)').forEach(e => e.style.filter = "blur(2px)");
+    //     }
+    // } 
+    })
 });
 
 

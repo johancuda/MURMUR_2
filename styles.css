@@ -75,6 +75,7 @@ a{
 
   .grid-item {
     color: white;
+    font-size: 20px;
       min-width: 100%;
       text-align: center;
   }

@@ -43,12 +43,17 @@ h1 {
   justify-content: center; /* Centers the grid columns within the container */
   justify-items: center;
 }
-
 /* Grid Item Styling */
 .grid-item {
     color: black;
     font-size: 18px;
     text-align: center;
+}
+
+.flex-container {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
 }
 
 @font-face {
@@ -82,11 +87,9 @@ a{
 
 .card {
     position: absolute;
-    top: 15vh;
     left: 25vw;
     width: 50vw;
     height: 50vh;
-    z-index: 100;
     transition: 1s ease-in-out;
     display: flex;
     flex-direction: column;
@@ -95,9 +98,9 @@ a{
   .card span {
     font-weight: bold;
     color: black;
-    text-align: center;
+    text-align: left;
     display: block;
-    font-size: 1em;
+    font-size: 1.5em;
   }
   
   .card .info {
@@ -106,7 +109,6 @@ a{
     display: block;
     text-align: left;
     font-size: 1 em;
-    margin: 1em;
   }
   
   .card .img {
@@ -167,7 +169,6 @@ a{
   display: block;
   text-align: left;
   font-size: 1 em;
-  margin: 1em;
 }
 
 .close {
@@ -186,6 +187,10 @@ a{
 
 .blue:hover {
   color: rgb(255,151,255);
+}
+
+ul {
+  padding-left: 10px;
 }
 
 /* Responsive: Mobile Layout */
@@ -230,7 +235,6 @@ a{
     left: auto;
     width: auto;
     height: 50vh;
-    z-index: 100;
     transition: 1s ease-in-out;
     display: flex;
     line-height: 1.2;

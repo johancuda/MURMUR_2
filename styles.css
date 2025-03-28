@@ -63,20 +63,31 @@ a{
 /* Responsive: Mobile Layout */
 @media (max-width: 768px) {
 
+  .titre {
+    font-size: 90px;
+    position: absolute;
+      top: 5%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    color: white;
+}
+
   .grid-container-2 {
       display: grid;
-      grid-template-columns: repeat(3, 100px); /* Three columns at 100px each */
+      grid-template-columns: auto; /* Three columns at 100px each */
+      top: 14%;
+      left: 46%;
       gap: 10px; /* Spacing between the columns */
       /* Calculate total width: (3 * 100px) + (2 * 10px) */
       width: calc(3 * 100px + 2 * 10px);
       margin: 0 auto; /* Centers the container itself */
-      align-items: center; /* Centers items horizontally */
+      justify-content: left;
   }
 
   .grid-item {
     color: white;
     font-size: 20px;
       min-width: 100%;
-      text-align: center;
+      text-align: left;
   }
 }

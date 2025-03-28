@@ -78,3 +78,11 @@ clear()
 function windowResized() {
     resizeCanvas(windowWidth, windowHeight)
 }
+
+let vid = document.getElementById('vid')
+if(window.innerWidth >= 768) {
+vid.setAttribute('src', "assets/videos/Composition 1.mp4")
+} else {
+  vid.setAttribute('src', "assets/videos/Composition 5.mp4")
+}
+console.log(vid.getAttribute('src'))

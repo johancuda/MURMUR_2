@@ -94,63 +94,63 @@ a{
     flex-direction: column;
   }
   
-  .card span {
-    font-weight: bold;
-    color: black;
-    text-align: left;
-    display: block;
-    font-size: 1.5em;
-  }
-  
-  .card .info {
-    font-size: large;
-    color: black;
-    display: block;
-    text-align: left;
-    font-size: 1 em;
-  }
-  
-  .card .img {
-    width: 4.8em;
-    height: 4.8em;
-    background: black;
-    border-radius: 15px;
-    margin: auto;
-  }
-  
-  .card .share {
-    margin-top: 1em;
-    display: flex;
-    justify-content: center;
-    gap: 1em;
-  }
-  
-  .card a {
-    color: black;
-    transition: .4s ease-in-out;
-  }
-  
-  .card a:hover {
-    color: rgb(255,151,255);
-  }
-  
-  .card button {
-    padding: 0.8em 1.7em;
-    display: block;
-    margin: auto;
-    border-radius: 25px;
-    border: none;
-    font-weight: bold;
-    background: black;
-    color: white;
-    transition: .4s ease-in-out;
-  }
-  
-  .card button:hover {
-    background: rgb(255,151,255);
-    color: black;
-    cursor: pointer;
-  }
+.card span {
+  font-weight: bold;
+  color: black;
+  text-align: left;
+  display: block;
+  font-size: 1.5em;
+}
+
+.card .info {
+  font-size: large;
+  color: black;
+  display: block;
+  text-align: left;
+  font-size: 1 em;
+}
+
+.card .img {
+  width: 4.8em;
+  height: 4.8em;
+  background: black;
+  border-radius: 15px;
+  margin: auto;
+}
+
+.card .share {
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+.card a {
+  color: black;
+  transition: .4s ease-in-out;
+}
+
+.card a:hover {
+  color: rgb(255,151,255);
+}
+
+.card button {
+  padding: 0.8em 1.7em;
+  display: block;
+  margin: auto;
+  border-radius: 25px;
+  border: none;
+  font-weight: bold;
+  background: black;
+  color: white;
+  transition: .4s ease-in-out;
+}
+
+.card button:hover {
+  background: rgb(255,151,255);
+  color: black;
+  cursor: pointer;
+}
 
 .card li{
   color: black;
@@ -184,7 +184,7 @@ a{
   align-content: center;
 }
 
-.blue:hover {
+.rose:hover {
   color: rgb(255,151,255);
 }
 

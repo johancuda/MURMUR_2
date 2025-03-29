@@ -46,7 +46,7 @@ h1 {
 /* Grid Item Styling */
 .grid-item {
     color: black;
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
 }
 
@@ -83,6 +83,10 @@ a{
 
 .active{
     color: rgb(255,151,255);
+}
+
+.blue:hover {
+  color: rgb(255,151,255);
 }
 
 .card {
@@ -127,7 +131,6 @@ a{
 
 .card a {
   color: black;
-  transition: .4s ease-in-out;
 }
 
 .card a:hover {
@@ -168,6 +171,7 @@ a{
   display: block;
   text-align: left;
   font-size: 1 em;
+  margin-bottom: 0px;
 }
 
 .close {

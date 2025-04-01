@@ -54,6 +54,7 @@ a{
   color: black;
 }
 
+
 @font-face {
     font-family: Eurostile-demi;
     src: url("./assets/fonts/Eurostile-Demi\ Demi.otf") format("opentype");
@@ -61,25 +62,27 @@ a{
 
 
 /* Responsive: Mobile Layout */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
   .titre {
-    font-size: 90px;
+    font-size: 22vw;
+    top: auto;
+    left: auto;
     position: absolute;
-      top: 5%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+    transform: translate(0,0);
     color: white;
 }
 
   .grid-container-2 {
       display: grid;
       grid-template-columns: auto; /* Three columns at 100px each */
-      top: 14%;
-      left: 46%;
+      top: 9%;
+      left: auto;
+      transform: translate(0,0);
       gap: 10px; /* Spacing between the columns */
       /* Calculate total width: (3 * 100px) + (2 * 10px) */
       width: calc(3 * 100px + 2 * 10px);
+      padding-left: 1vw;
       margin: 0 auto; /* Centers the container itself */
       justify-content: left;
   }
@@ -89,5 +92,10 @@ a{
     font-size: 20px;
       min-width: 100%;
       text-align: left;
+  }
+  .wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
   }
 }

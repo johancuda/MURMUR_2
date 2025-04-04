@@ -47,7 +47,6 @@ function setup() {
   canvas = createCanvas(w, h);
   canvas.position(0,0);
   canvas.style('z-index', '-1')
-  fullscreen(true);
 
   for (let x = 0; x < width; x += step) {
     for (let y = 0; y < height; y += step) {
@@ -86,3 +85,13 @@ vid.setAttribute('src', "assets/videos/Composition 1.mp4")
   vid.setAttribute('src', "assets/videos/Composition 5_1.mp4")
 }
 console.log(vid.getAttribute('src'))
+
+function touchStarted() {
+  mouseClicked();
+  return false;
+  }
+  
+  function touchMoved() {
+  mouseClicked();
+  return false;
+  }

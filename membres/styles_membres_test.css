@@ -96,6 +96,7 @@ a{
     transition: 1s ease-in-out;
     display: flex;
     flex-direction: column;
+    line-height: 2vw;
   }
   
 .card span {
@@ -253,5 +254,9 @@ ul {
     flex-direction: column;
     justify-content: center;
     gap: 30px;
+  }
+
+  h1 {
+    font-size: 22vw;
   }
 }

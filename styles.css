@@ -4,6 +4,9 @@ body {
   padding: 0;
   overflow: hidden;
   font-family: Eurostile-demi;
+  user-select: none; 
+  touch-action: none; 
+  -webkit-user-select: none;
 }
 
 video {
@@ -35,10 +38,10 @@ a{
       left: 50%;
       transform: translate(-50%, -50%);
   display: grid;
-  grid-template-columns: repeat(3, 200px); /* Three columns at 100px each */
+  grid-template-columns: repeat(4, 200px); /* Three columns at 100px each */
   gap: 20px; /* Spacing between the columns */
   /* Calculate total width: (3 * 100px) + (2 * 10px) */
-  width: calc(3 * 200px + 2 * 10px);
+  width: calc(4 * 200px + 2 * 10px);
   margin: 0 auto; /* Centers the container itself */
   justify-content: center; /* Centers the grid columns within the container */
 }
@@ -83,6 +86,7 @@ a{
       /* Calculate total width: (3 * 100px) + (2 * 10px) */
       width: calc(3 * 100px + 2 * 10px);
       padding-left: 1vw;
+      padding-top: 2vw;
       margin: 0 auto; /* Centers the container itself */
       justify-content: left;
   }

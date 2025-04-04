@@ -18,10 +18,10 @@ images.forEach(img => {
         // if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
             switch (e.target.id){
             case "1":
-                window.location.href = "./iluSeydoux/";
+                window.location.href = "./albertoGonzalezMorales";
                 break;
             case "2":
-                window.location.href = "./albertoGonzalezMorales";
+                window.location.href = "./iluSeydoux/";
                 break;
             case "3":
                 window.location.href = "./leaCelestineBernasconi/";

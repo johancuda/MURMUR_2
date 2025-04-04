@@ -9,6 +9,11 @@ h1 {
     font-size: 90px;
 }
 
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
 .grid-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -20,10 +25,10 @@ h1 {
 
 .grid-container-2 {
     display: grid;
-    grid-template-columns: repeat(3, 200px); /* Three columns at 100px each */
+    grid-template-columns: repeat(4, 200px); /* Three columns at 100px each */
     gap: 30px; /* Spacing between the columns */
     /* Calculate total width: (3 * 100px) + (2 * 10px) */
-    width: calc(3 * 200px + 2 * 10px);
+    width: calc(4 * 200px + 2 * 10px);
     margin: auto; /* Centers the container itself */
     margin-top: 15px;
     margin-bottom: 30px;
@@ -243,5 +248,9 @@ ul {
 
   ul {
     padding-right: 10px;
+  }
+
+  h1  {
+    font-size: 22vw;
   }
 }
